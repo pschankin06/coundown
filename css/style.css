@@ -1,0 +1,74 @@
+body {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #E5E5E5;
+    color: #202020;
+    min-height: 100vh;
+}
+
+.container {
+    width: 476px;
+    margin: 100px auto;
+}
+
+.countdown__form {
+    min-height: 300px;
+    padding: 13px;
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto 30px;
+}
+
+#input {
+    padding: 12px;
+    display: inline-block;
+    width: 75%;
+    height: 45px;
+    border: 1px solid #989898;
+    border-radius: 6px;
+}
+
+#input ::placeholder {
+    padding: 12px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #BBBBBB;
+}
+
+.button {
+    padding: 12px;
+    display: inline-block;
+    width: 80px;
+    height: 45px;
+    border: 1px solid #989898;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color .4s ease-in-out;
+}
+
+.button:hover {
+    background-color: #9898b5;
+}
+
+.button:active {
+    box-shadow: inset 5px 5px 15px -5px #000;
+}
+
+.result {
+    max-width: 100%;
+    margin: 60px auto;
+    text-align: center;
+    display: none;
+}
+
+.show {
+    display: block;
+}
