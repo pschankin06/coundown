@@ -16,7 +16,8 @@ UI_ELEMENTS.COUNTDOWN_FORM.addEventListener('submit', event => {
 
 export function showResult(remainingTime, userDate, currentTime) {
     const remainingTimeText = formatDuration(remainingTime, { format: ['years', 'days', 'hours'], delimiter: ', ' });
-    const negativeTime = '-' + remainingTimeText;
+    const timePrefix = '-';
+    const negativeTime = timePrefix + remainingTimeText;
     const outputTime = userDate > currentTime ? remainingTimeText : negativeTime;
     UI_ELEMENTS.REMAINING_TIME_CONTAINER.classList.add('show');
     UI_ELEMENTS.REMAINING_TIME.textContent = `Remaining time: ${outputTime}`;
